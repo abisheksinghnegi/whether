@@ -1,0 +1,73 @@
+.container {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    text-align: center;
+    color: white;
+    
+  }
+
+.maincontainer{
+    background-image: url("./bg.jpg");
+    background-size: cover;
+    width: 100%;
+}
+  
+.search-box {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+
+.search-box:hover{
+    background-color: rgba(0, 0, 0, 0.264);
+    color: white;
+  }
+  
+.user-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+  }
+  
+.user-card {
+    border: 1px solid #ddd;
+    padding: 15px;
+    margin: 10px;
+    width: 250px;
+    border-radius: 8px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+    text-align: left;
+    transition: 0.3s ease;
+  }
+
+.user-card:hover{
+    transform: scale(1.1);
+  }
+  
+.details-link {
+    color: blue;
+    text-decoration: none;
+    display: block;
+    margin-top: 10px;
+  }
+  
+
+@media (min-width: 600px) {
+    .user-list {
+      justify-content: space-evenly;
+    }
+  
+    .user-card {
+      width: 45%;
+    }
+  }
+  
+@media (min-width: 900px) {
+    .user-card {
+      width: 30%;
+    }
+  }
