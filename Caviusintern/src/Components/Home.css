@@ -19,6 +19,7 @@
     margin-bottom: 20px;
     border: 1px solid #ccc;
     border-radius: 5px;
+    animation: inn 2s ease-in-out;
   }
 
 .search-box:hover{
@@ -31,6 +32,7 @@
     flex-wrap: wrap;
     justify-content: center;
     gap: 20px;
+    animation: inn 2s ease-in-out;  
   }
   
 .user-card {
@@ -42,7 +44,29 @@
     box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
     text-align: left;
     transition: 0.3s ease;
+    animation: ani 1s ease-in-out;
   }
+
+@keyframes ani {
+  0% {
+    transform: scaleX(0.3);  
+    opacity: 0;
+  }
+100%{
+    transform: scaleX(1);  
+      opacity: 1;
+  }   
+}
+
+@keyframes inn {
+  0% { 
+    opacity: 0;
+  }
+100%{  
+      opacity: 1;
+  }  
+  
+}
 
 .user-card:hover{
     transform: scale(1.1);
